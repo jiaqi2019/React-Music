@@ -1,0 +1,7 @@
+export const SET_HOT_KEY = 'SET_HOT_KEY'
+export const SET_SEARCH_HISTORY = "SET_SEARCH_HISTORY"
+export const TYPE_SINGER = "TYPE_SINGER"
+export const GET_SEARCH_HISTORY = "GET_SEARCH_HISTORY"
+
+
+

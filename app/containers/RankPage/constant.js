@@ -1,0 +1,1 @@
+export const SET_SELECT_RANK = "SET_SELECT_RANK" 
