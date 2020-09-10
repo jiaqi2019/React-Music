@@ -1,5 +1,5 @@
 {
-  "name": "webpack-music",
+  "name": "react-music",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -34,7 +34,7 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.1.1"
   },
-  "author": "",
+  "author": "jiaqi",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
