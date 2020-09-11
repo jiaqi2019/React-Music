@@ -45,6 +45,10 @@ function RecommendPage ({sliderList, discList=[], getSlider, getDiscList, setDis
       clearTimeout(timer)
       timer = setTimeout(() => {
         setRefresh(new Date())
+        // setRefresh((old) => {
+        //   console.log({old});
+        //   return new Date()
+        // })
       }, 500)
     }
   })()

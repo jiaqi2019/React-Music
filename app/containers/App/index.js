@@ -25,14 +25,17 @@ function App({ currentSong }) {
         <Route path='/search' component={SearchPage}></Route>
         <Route path='/user' component={UserPage}></Route>
       </Switch>
-      <Player show={currentSong}/>
+      {
+        currentSong &&
+        <Player />
+      }
     </div>
   );
 }
 function mapSateToProps(state) {
   const { playlist, currentIndex } = state.playerReducer
   return {
-    currentSong: playlist[currentIndex] || {}
+    currentSong: playlist[currentIndex] 
   }
 }
 
