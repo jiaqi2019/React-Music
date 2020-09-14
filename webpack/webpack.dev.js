@@ -33,7 +33,7 @@ module.exports = require('./webpack.common')({
     new htmlWebpackPlugin({
       template: path.join(srcPath, 'index.html')
     }),
-    new webpack.NamedModulesPlugin(),
+    // new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
   devtool: 'eval-source-map',
