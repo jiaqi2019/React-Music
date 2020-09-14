@@ -52,7 +52,7 @@ module.exports = (options) => ({
         options: {
           limit: 8*1024,
           name: '[hash:10].[ext]',
-          outputPath: 'imges'
+          outputPath: 'imgs'
         }
       },
       {
@@ -99,9 +99,8 @@ module.exports = (options) => ({
   devtool: options.devtool,
   performance: options.performance || {},
   target: 'web',
+  devServer: options.devServer
 })
-
-
 
 
 
