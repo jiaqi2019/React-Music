@@ -13,8 +13,8 @@ module.exports = require('./webpack.common')({
     index: path.join(srcPath, 'index')
   },
   output: {
-    filename: '[name].[chunkhash].js',
-    chunkFilename: '[name].[chunkhash].chunk.js',
+    filename: 'js/[name].[chunkhash].js',
+    chunkFilename: 'js/[name].[chunkhash].chunk.js',
   },
   module: {
     rules: [
@@ -125,6 +125,7 @@ module.exports = require('./webpack.common')({
   plugins: [
     new htmlWebpackPlugin({
       template: path.join(srcPath, 'index.html'),
+      filename: 'index.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
