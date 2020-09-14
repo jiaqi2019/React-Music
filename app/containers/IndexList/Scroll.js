@@ -39,8 +39,8 @@ export default styled(Scroll)`
           padding-bottom: 20px;
       }
       .ava{
-          flex: 0;
-          width: 50px;
+          flex: 0 0;
+        //   width: 50px;
           height: 50px;
           border-radius: 50%;
       }
