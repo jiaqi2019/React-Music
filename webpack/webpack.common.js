@@ -1,7 +1,7 @@
 const path = require('path')
-const {srcPath, distPath} = require('./paths')
+const { distPath } = require('./paths')
 const webpack = require('webpack')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (options) => ({
   mode: options.mode,
@@ -92,7 +92,7 @@ module.exports = (options) => ({
       NODE_ENV: 'development', // 除非有定义 process.env.NODE_ENV，否则就使用 'development'
       DEBUG: false
     }),
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
   ]),
 
   optimization: options.optimization,
