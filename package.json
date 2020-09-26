@@ -8,7 +8,8 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js --progress",
     "start:devServer": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.js",
     "start:server": "cross-env NODE_ENV=development node server",
-    "start:prod": "cross-env NODE_ENV=production node server"
+    "start:prod": "cross-env NODE_ENV=production node server",
+    "start": "npm run build && npm run start:prod"
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
