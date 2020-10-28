@@ -145,14 +145,6 @@ module.exports = require('./webpack.common')({
     }),
     //压缩css
     new OptimizeCssAssetsWebpackPlugin(),
-    // 使用此插件可以在命令行中NODE_ENV=development去设置 process.env.NODE_ENV的实际值
-    // windows中没有NODE_ENV这个变量，需要set NODE_ENV=development
-    // 或者使用cross-env,  cross-env NODE_ENV=development
-    // 不使用此插件时process.env.NODE_ENV的值与 该配置中mode值相同
-    new webpack.EnvironmentPlugin({
-      NODE_ENV: 'development', // 除非有定义 process.env.NODE_ENV，否则就使用 'development'
-      DEBUG: false
-    }),
    
   ],
   devtool: 'source-map',  //使用map,会为每个bundle生成对应得.map文件
